@@ -1,24 +1,99 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Looping Through Arrays</title>
-  </head>
-  <body>
 
-    <h1>Open the console to see the magic!</h1>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Word Guess</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script>
+    <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
 
-      // Creating an array of vegetables.
-      var vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/game.js"></script>
+</head>
 
-      // Looping through each item in the array and logging a message to the console.
-      for (var i = 0; i < vegetables.length; i++) {
-        console.log("I love " + vegetables[i]);
-      }
+<body>
 
-    </script>
-    
-  </body>
+    <div id="myWelcome">
+        <img src="assets/images/logo.png" alt="" id="welcomeImg">
+        <div class="forName">
+            <label>What is your name?</label>
+            <div>
+                <input type="text" id="yourName" placeholder="John Smith">
+            </div>
+            <button id="start" class="btn btn-success" disabled>Star Game</button>
+        </div>
+
+    </div>
+
+    <div id="myGame">
+        <header>
+            <img src="assets/images/logo.png" alt="" id="gameImg">
+        </header>
+
+        <div class="jumbotron shadow-lg">
+
+            <div class="row">
+                <div class="col-lg-5" id="game">
+                    <div id="status_image"></div>
+                </div>
+
+                <div class="col-lg-7">
+                    <h1 class="display-4" id="name"></h1>
+
+                    <p class="lead">Press the spacebar to start.</p>
+
+                    <hr class="my-4">
+
+                    <section class="container-guess">
+                        <div id="key_guessed"></div>
+                    </section>
+
+                    <hr class="my-4">
+
+                    <p class="lead">Letters already used:</p>
+
+                    <section class="container-loss">
+                        <div id="key_losed"></div>
+                    </section>
+
+                    <div class="row">
+                        <div class="col">
+                            <button id="finish" class="btn btn-danger">Exit</button>
+                            <button id="again" class="btn btn-success" hidden>Play Again</button>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-success win" id="win" role="alert"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="alert alert-danger lose" role="alert" id="lose"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
