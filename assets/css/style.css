@@ -1,0 +1,94 @@
+body{ 
+    font-family: 'Handlee', cursive;
+}
+
+#myGame{
+    display: none;
+}
+
+#myWelcome{
+    text-align: center;
+}
+
+#welcomeImg{
+    width: 400px;   
+    margin: 90px;
+}
+
+.forName{
+    width: 700px;
+    margin: 0 auto;
+    font-size: 2em;
+}
+
+.form-control{
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+button{
+    margin-top: 20px;
+}
+
+#key_guessed{
+    font-size: 3em;
+}
+
+#game{
+    text-align: center;
+}
+
+#status_image img{
+    width: 250px;
+}
+
+.container-guess{
+    text-align: center;
+}
+
+#key_guessed{
+    font-size: 2em;
+}
+.container-guess{
+    text-align: center;
+}
+
+.win, .lose{
+    width: 120px;
+    margin: 0 auto;
+}
+
+.badge{
+    float: right;
+}
+
+
+
+
+
+
+
+
+header{
+    text-align: center;
+}
+
+header img{
+    width: 300px;
+    margin: 25px;
+}
+
+
+
+.jumbotron{
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.jumbotron h1{
+    font-family: 'Akronim', cursive;
+}
+
+
+
